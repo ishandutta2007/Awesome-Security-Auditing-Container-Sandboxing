@@ -1,26 +1,26 @@
-# Awesome-Security-Auditing-Container-Sandboxing
+# Awesome-Social-Coding-Developer-Activity-Showcase
 
-## Top Security Auditing & Container Sandboxing Ecosystem
+## Top Social Coding & Developer Activity Showcase Ecosystem
 
 
 
 **Curated List of SaaS/Hosted Platforms & Open-Source GitHub Projects**  
 
-*Focused on Container Isolation, MicroVMs, Runtime Syscall Security, Vulnerability Scanning & Kernel Sandboxing*  
+*Focused on Developer Portfolios, GitHub Profile Badges & Stats, Contribution Graphs, Coding Visuals & Developer Networks*  
 
 **Last updated: November 2026**
 
 
 
-This repository tracks notable **SaaS/hosted cloud-native security platforms** and **open-source GitHub projects** for **Security Auditing & Container Sandboxing**. These tools isolate untrusted workloads (including AI code-execution agents and multi-tenant containers) using user-space kernels, lightweight MicroVMs, Linux namespaces/seccomp/Landlock sandboxes, eBPF runtime threat detection, and SBOM/CVE image scanners.
+This repository tracks notable **SaaS/hosted developer showcase platforms** and **open-source GitHub projects** for **Social Coding & Developer Activity Showcase**. These tools enable software engineers, open-source maintainers, and creators to visualize GitHub contribution graphs, embed dynamic stats cards in profile READMEs, generate code-driven demo videos, earn verifiable digital badges, and share engineering builds across developer communities.
 
 
 
-**Examples** include gabrielelozupone/kokon, gVisor, Firecracker, Kata Containers, Falco, Tetragon, Trivy, Grype, Syft, Bubblewrap, nsjail, Lynis, Aqua Security, Sysdig Secure, Prisma Cloud, Wiz, Docker Scout, and Snyk Container.
+**Examples** include GitHub Readme Stats, Lowlighter Metrics, Shields.io, GitHub Skyline, Readme.so, GitHub Profile Readme Generator, gatewai-dev/gitframes (Framefields), WakaTime / Wakapi, Holopin, Daily.dev, Dev.to, Hashnode, Polywork, and Showwcase.
 
 
 
-**Open-source emphasis**: This list heavily expands on active open-source container sandboxes, MicroVM hypervisors, eBPF runtime security monitors, Linux sandboxing primitives, and container vulnerability auditors — ideal for DevSecOps engineers, platform architects, security researchers, and AI sandbox builders.
+**Open-source emphasis**: This list heavily expands on active open-source GitHub profile widgets, SVG contribution graph renderers, self-hosted coding-time trackers, interactive README builders, and code-first showcase video engines — ideal for developers building standout engineering profiles and sharing open-source work without vendor lock-in.
 
 
 
@@ -44,51 +44,57 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[Wiz](https://wiz.io)**  
+- **[Daily.dev](https://daily.dev)**  
 
-  Cloud-native application protection platform (CNAPP) providing agentless container, Kubernetes, and cloud workload vulnerability scanning, runtime sensors, and attack-path analysis.
-
-
-
-- **[Prisma Cloud (Palo Alto Networks)](https://paloaltonetworks.com)**  
-
-  Enterprise CNAPP suite offering container image compliance auditing, runtime defense, Web Application and API Security (WAAS), and host/serverless protection.
+  Developer news aggregator, personalized engineering feed, and social coding community helping developers discover articles, showcase reputation, and connect with peers.
 
 
 
-- **[Aqua Security](https://aquasec.com)**  
+- **[Holopin](https://holopin.io)**  
 
-  Cloud-native container and Kubernetes security platform providing image assurance, dynamic threat analysis, eBPF runtime enforcement, and supply-chain security.
-
-
-
-- **[Sysdig Secure](https://sysdig.com)**  
-
-  Cloud security and runtime threat detection platform built on Falco, delivering real-time container auditing, vulnerability management, and incident forensics.
+  Digital badge and achievement showcase platform designed for open-source maintainers, hackathons, and developer communities to award embeddable GitHub profile badges.
 
 
 
-- **[Docker Scout](https://docker.com)**  
+- **[Dev.to (Forem Hosted)](https://dev.to)**  
 
-  Hosted container supply-chain analysis and policy evaluation service integrated into Docker Hub and Docker Desktop for continuous CVE tracking and base-image remediation.
-
-
-
-- **[Snyk Container](https://snyk.io)**  
-
-  Developer-first container and Kubernetes security SaaS detecting OS package and application vulnerabilities in Dockerfiles and images with automated base-image upgrade advice.
+  Collaborative developer blogging and showcase network where engineers publish tutorials, open-source release notes, and project build logs.
 
 
 
-- **[E2B (Code Interpreter Sandboxes)](https://e2b.dev)**  
+- **[Hashnode](https://hashnode.com)**  
 
-  Cloud-hosted Firecracker MicroVM sandboxing API built specifically for isolating untrusted AI agent code execution and browser sessions.
+  Developer blogging and technical storytelling platform supporting custom domains, GitHub Markdown backups, and engineering series.
 
 
 
-- **[Fly.io Machines (Firecracker Cloud)](https://fly.io)**  
+- **[Polywork](https://polywork.com)**  
 
-  Edge application platform running user containers inside isolated Firecracker MicroVMs with fast cold starts and hardware-virtualized multi-tenancy.
+  Multidisciplinary professional network and timeline showcase allowing builders to highlight side projects, open-source contributions, talks, and collaborations.
+
+
+
+- **[Showwcase](https://showwcase.com)**  
+
+  Social network built specifically for developers to showcase code repositories, technical threads, credentials, and engineering work history.
+
+
+
+- **[Sourcerer](https://sourcerer.io)**  
+
+  Visual engineering profile and GitHub analytics service that summarizes languages, commit patterns, and repository highlights into a shareable developer portfolio.
+
+
+
+- **[WakaTime](https://wakatime.com)**  
+
+  Cloud-hosted developer productivity dashboard and IDE plugin ecosystem providing automated coding metrics, language breakdowns, and embeddable GitHub profile badges.
+
+
+
+- **[GitSpo](https://gitspo.com)**  
+
+  GitHub profile analytics and developer discovery service highlighting trending contributors, star velocity, and open-source repository reach.
 
 
 
@@ -98,81 +104,81 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[Kokon (gabrielelozupone/kokon)](https://github.com)**  
+- **[GitHub Readme Stats (anuraghazra/github-readme-stats)](https://github.com)**  
 
-  Open-source lightweight container sandboxing and security auditing utility designed for isolated execution environments and fine-grained workload containment.
-
-
-
-- **[gVisor (google/gVisor)](https://github.com)**  
-
-  Application kernel written in Go that implements a substantial portion of the Linux system interface in userspace, providing strong OCI container isolation (`runsc`) without VM overhead.
+  The most popular open-source dynamic SVG card generator for embedding real-time GitHub stats, top languages, and pinned repository cards into profile READMEs.
 
 
 
-- **[Firecracker (firecracker-microvm/firecracker)](https://github.com)**  
+- **[Metrics (lowlighter/metrics)](https://github.com)**  
 
-  Open-source Virtual Machine Monitor (VMM) written in Rust using Linux KVM to create and manage secure, multi-tenant MicroVMs with minimal memory footprint and sub-second startup.
-
-
-
-- **[Kata Containers (kata-containers/kata-containers)](https://github.com)**  
-
-  Open-source container runtime that builds lightweight virtual machines feeling and performing like standard containers while providing hardware-isolated kernel boundaries.
+  Infographics generator supporting 40+ plugins and 300+ options to render rich SVG/PNG cards displaying GitHub activity, Spotify, WakaTime, habits, and isometric calendars.
 
 
 
-- **[Falco (falcosecurity/falco)](https://github.com)**  
+- **[Readme.so (octokatherine/readme.so)](https://github.com)**  
 
-  CNCF graduated open-source cloud-native runtime security engine using eBPF and kernel probes to detect anomalous container syscalls, shell spawns, and privilege escalations in real time.
-
-
-
-- **[Cilium Tetragon (cilium/tetragon)](https://github.com)**  
-
-  eBPF-based security observability and runtime enforcement tool capable of detecting and synchronously blocking malicious syscalls, file accesses, and network sockets inside the Linux kernel.
+  Open-source, browser-based visual editor with pre-built Markdown sections and live preview for rapidly crafting project and profile README files.
 
 
 
-- **[Trivy (aquasecurity/trivy)](https://github.com)**  
+- **[GitHub Profile Readme Generator (rahuldkjain/github-profile-readme-generator)](https://github.com)**  
 
-  Comprehensive open-source vulnerability, misconfiguration, secret, and SBOM scanner for container images, filesystems, Git repositories, and Kubernetes clusters.
-
-
-
-- **[Grype (anchore/grype)](https://github.com)** & **[Syft (anchore/syft)](https://github.com)**  
-
-  Open-source CLI tools by Anchore for generating Software Bills of Materials (SBOMs) from container images (`Syft`) and matching them against vulnerability databases (`Grype`).
+  Open-source web tool that generates clean, structured GitHub profile README Markdown complete with social icons, skill badges, and stats add-ons.
 
 
 
-- **[Bubblewrap (`bwrap`) (containers/bubblewrap)](https://github.com)**  
+- **[Shields.io (badges/shields)](https://github.com)**  
 
-  Low-level, unprivileged sandboxing tool for Linux utilizing user namespaces, mount namespaces, and seccomp filters (powering Flatpak and local AI sandboxes).
-
-
-
-- **[nsjail (google/nsjail)](https://github.com)**  
-
-  Lightweight process isolation tool by Google combining Linux namespaces, cgroups, `rlimits`, and `kafel` seccomp-bpf syscall policies for sandboxing untrusted binaries.
+  Open-source metadata badge service generating concise, crisp, and legible SVG badges for builds, licenses, downloads, and social developer profiles.
 
 
 
-- **[Lynis (CISOfy/lynis)](https://github.com)**  
+- **[GitFrames / Framefields (gatewai-dev/framefields)](https://github.com)**  
 
-  Battle-tested open-source security auditing and compliance hardening tool for Linux, macOS, and Unix host systems running container workloads.
-
-
-
-- **[Docker Bench for Security (docker/docker-bench-security)](https://github.com)** & **[kube-bench (aquasecurity/kube-bench)](https://github.com)**  
-
-  Open-source auditing scripts that check Docker daemons and Kubernetes deployments against official CIS Security Benchmarks.
+  Apache-2.0 open-source, code-first video and image engine rendered natively on WebGPU — enabling developers and AI coding agents to generate crisp software demo videos and launch showcases via TypeScript code.
 
 
 
-- **[Sysbox (nestybox/sysbox)](https://github.com)**  
+- **[GitHub Contribution Snake (Platane/snk)](https://github.com)**  
 
-  Open-source OCI container runtime ("runc on steroids") enabling rootless Docker-in-Docker and Kubernetes-in-Docker sandboxes using Linux user-namespace isolation.
+  Open-source GitHub Action that turns a user's GitHub contribution graph into an animated SVG/GIF snake game eating commit cells.
+
+
+
+- **[GitHub Readme Activity Graph (Ashutosh00710/github-readme-activity-graph)](https://github.com)**  
+
+  Dynamically generated SVG activity line graph showcasing a developer's last 31 days of GitHub contributions with customizable themes.
+
+
+
+- **[GitHub Profile Trophy (ryo-ma/github-profile-trophy)](https://github.com)**  
+
+  Open-source dynamic SVG trophy shelf that evaluates and displays GitHub achievements across commits, stars, followers, issues, and pull requests.
+
+
+
+- **[github-readme-streak-stats (DenverCoder1/github-readme-streak-stats)](https://github.com)**  
+
+  Self-hostable PHP/SVG generator displaying total contributions, current streak, and longest contribution streak on GitHub profiles.
+
+
+
+- **[Wakapi (muety/wakapi)](https://github.com)**  
+
+  Minimalist, self-hosted, WakaTime-compatible coding statistics backend written in Go for tracking personal IDE activity and exporting profile badges with full data ownership.
+
+
+
+- **[Forem (forem/forem)](https://github.com)**  
+
+  The open-source community and developer showcase software behind Dev.to, deployable for independent engineering networks and coding publications.
+
+
+
+- **[GitHub Skyline CLI / Isometric Contributions (jasonlong/isometric-contributions)](https://github.com)**  
+
+  Open-source browser extension and 3D visualization tools that render GitHub contribution calendars as isometric pixel-art cityscapes or printable 3D models.
 
 
 
@@ -180,23 +186,21 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
-- **[Firejail (netblue30/firejail)](https://github.com)** — SUID sandbox program reducing the risk of security breaches by restricting the running environment of untrusted Linux applications via seccomp-bpf and namespaces.
+- **[readme-typing-svg (DenverCoder1/readme-typing-svg)](https://github.com)** — Dynamically generated, customizable SVG typing animations for GitHub profile headers.
 
-- **[Youki (youki-dev/youki)](https://github.com)** & **[crun (containers/crun)](https://github.com)** — High-speed open-source OCI container runtimes written in Rust and C with native `seccomp`, `Landlock`, and rootless cgroup v2 support.
+- **[skill-icons (tandpfun/skill-icons)](https://github.com)** & **[devicons](https://github.com)** — Clean, uniform tech-stack icon sets engineered for developer portfolios and READMEs.
 
-- **[Kubescape (kubescape/kubescape)](https://github.com)** — CNCF open-source Kubernetes security platform offering NSA/MITRE posture auditing, RBAC visualization, and eBPF runtime reachability analysis.
+- **[gource (acaudwell/Gource)](https://github.com)** — Open-source software version control visualization tool that renders repository commit history as an animated, organic tree.
 
-- **[Clair (quay/clair)](https://github.com)** — Open-source static vulnerability analysis engine designed for container registries (Quay, Harbor).
+- **[git-heatmap / gh-skyline](https://github.com)** — Official GitHub CLI extension for generating 3D printable STL models of your yearly contribution graph directly from the terminal.
 
-- **[Tracee (aquasecurity/tracee)](https://github.com)** — Linux runtime security and forensics tool leveraging eBPF to trace container system calls and behavioral signatures.
+- **[Remotion](https://github.com)** — Open-source React framework for programmatically creating MP4 launch videos and code walkthroughs using web technologies.
 
-- **[Landlock / `landrun` (Zouuup/landrun)](https://github.com)** — Lightweight Go CLI wrapper leveraging the Linux Landlock LSM to sandbox arbitrary commands with strict filesystem and TCP port allowlists without root.
-
-- **[srt — Sandbox Runtime (anthropic-experimental/sandbox-runtime)](https://github.com)** — Open-source OS-level sandboxing wrapper (`bubblewrap` on Linux, `sandbox-exec` on macOS) built to isolate terminal commands and AI coding agents.
+- **[Blog Post Workflow (gautamkrishnar/blog-post-workflow)](https://github.com)** — GitHub Action that automatically pulls latest posts from Dev.to, Hashnode, Medium, or RSS feeds into your profile README.
 
 
 
-**Frameworks for building custom systems**: Combine **Trivy** + **Syft** in CI/CD for pre-deployment image auditing, run untrusted multi-tenant or AI workloads inside **gVisor**, **Firecracker**, or **Bubblewrap**, and monitor production syscalls in real time with **Falco** or **Tetragon**.
+**Frameworks for building custom systems**: Combine **Readme.so** + **Lowlighter Metrics** + **Shields.io** + **Blog Post Workflow** via GitHub Actions for an automated, self-updating profile showcase, and pair **Framefields (GitFrames)** or **Gource** to render high-craft demo videos for repository launches.
 
 
 
@@ -224,9 +228,9 @@ Star the repo if you find it useful!
 
 - This is a **community-curated** list — not exhaustive and not an endorsement.
 
-- Container sandboxing and kernel isolation mechanisms (`namespaces`, `seccomp`, `gVisor`, `Firecracker`) vary significantly in attack surface and kernel requirements; defense-in-depth (least privilege, read-only root filesystems, network egress policies, and non-root users) is always recommended.
+- Public GitHub stats cards and workflows require scoped Personal Access Tokens (PATs); always grant minimum read-only scopes (`read:user`, `public_repo`) and never expose tokens in public files.
 
-- Security auditing tools (`Lynis`, `docker-bench-security`, `Falco`) should only be run on hosts, clusters, and container registries you own or have explicit authorization to audit.
+- Self-hosted SVG card generators (`github-readme-stats`, `metrics`) can hit GitHub GraphQL API rate limits under heavy traffic; deploy your own Vercel/Docker instance with caching enabled for reliable uptime.
 
 
 
@@ -234,6 +238,6 @@ Star the repo if you find it useful!
 
 
 
-**Made for DevSecOps engineers, security researchers, platform architects, and open-source builders.**  
+**Made for open-source maintainers, developer advocates, indie hackers, and software engineers.**  
 
-Let's make security auditing and container sandboxing verifiable, resilient, and open to everyone.
+Let's make social coding and developer activity showcases expressive, automated, and open to everyone.
