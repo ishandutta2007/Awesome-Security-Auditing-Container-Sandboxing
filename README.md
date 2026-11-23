@@ -1,38 +1,43 @@
-# Awesome Security Auditing & Container Sandboxing
+# 🛡️ Awesome Security Auditing & Container Sandboxing 📦
 
 <p align="center">
   <img src="assets/banner.svg" alt="Awesome Security Auditing & Container Sandboxing Banner" width="100%">
 </p>
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing?style=social" alt="GitHub stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing?style=social" alt="GitHub forks"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 A curated directory and comparative guide of **Enterprise SaaS Cloud-Native Security Platforms (CNAPP)** and **Open-Source Container Sandboxing & Security Auditing Solutions**. This repository covers everything needed to build, isolate, and audit modern compute workloads—from multi-tenant Kubernetes clusters and Linux kernel namespaces to lightweight MicroVMs, eBPF-driven runtime threat mitigation, Landlock LSM boundaries, and automated SBOM/CVE vulnerability scanning.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Architectural Patterns & Selection Guide](#architectural-patterns--selection-guide)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer & Security Notice](#disclaimer--security-notice)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Architectural Patterns & Selection Guide](#️-architectural-patterns--selection-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [🌟 Star History](#-star-history)
+- [💖 Support](#-support)
+- [⚠️ Disclaimer & Security Notice](#️-disclaimer--security-notice)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global container security and cloud-native security market is estimated at **$3.06B to $3.89B in 2026** (projected to reach over **$15B–$25B by the early 2030s** at a CAGR of 18–26%), driven by mandatory software bill-of-materials (SBOM) compliance, AI agent code-execution sandboxing demands, and rapid zero-trust cloud transitions. The sector is **moderately fragmented and currently undergoing strong platform consolidation**, transitioning from standalone point-tools (isolated vulnerability scanners or runtime sensors) into comprehensive, winner-take-most Cloud-Native Application Protection Platforms (CNAPP) led by established cybersecurity conglomerates and hyper-growth unicorns.
 
 ---
 
-## SaaS/Hosted Platforms
+## ☁️ SaaS/Hosted Platforms
 
 The following SaaS and hosted platforms provide managed container security auditing, runtime protection, vulnerability lifecycle management, and microVM cloud sandboxes. Sorted by company scale (valuation / market capitalization in descending order):
 
@@ -49,7 +54,7 @@ The following SaaS and hosted platforms provide managed container security audit
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Sorted by GitHub community popularity (stargazers count descending). Each open-source project features its live GitHub stargazers badge linking directly to its stargazer community.
 
@@ -85,7 +90,7 @@ Sorted by GitHub community popularity (stargazers count descending). Each open-s
 
 ---
 
-## Architectural Patterns & Selection Guide
+## 🏗️ Architectural Patterns & Selection Guide
 
 When architecting a secure containerized environment, defense-in-depth requires combining multiple isolation and auditing layers:
 
@@ -116,14 +121,14 @@ When architecting a secure containerized environment, defense-in-depth requires 
 +-----------------------------------------------------------------------------------+
 ```
 
-- **For Multi-Tenant AI Agent Execution**: Utilize **Firecracker** or **gVisor (`runsc`)** to isolate untrusted code execution from the host kernel.
-- **For Low-Overhead Process Isolation**: Use **Bubblewrap** or **Landrun** (Landlock LSM) to enforce path allowlists and disable unauthorized network egress.
-- **For Production CI/CD Pipelines**: Run **Trivy** or **Grype + Syft** on every pull request, enforcing zero Critical/High CVE deployments.
-- **For In-Cluster Threat Blocking**: Deploy **Cilium Tetragon** with eBPF sensor rules to terminate malicious processes in-kernel before syscall execution completes.
+- 🤖 **For Multi-Tenant AI Agent Execution**: Utilize **Firecracker** or **gVisor (`runsc`)** to isolate untrusted code execution from the host kernel.
+- 🔒 **For Low-Overhead Process Isolation**: Use **Bubblewrap** or **Landrun** (Landlock LSM) to enforce path allowlists and disable unauthorized network egress.
+- 🔍 **For Production CI/CD Pipelines**: Run **Trivy** or **Grype + Syft** on every pull request, enforcing zero Critical/High CVE deployments.
+- ⚡ **For In-Cluster Threat Blocking**: Deploy **Cilium Tetragon** with eBPF sensor rules to terminate malicious processes in-kernel before syscall execution completes.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 Contributions to this ecosystem guide are warmly welcomed! To suggest a new tool or update an existing entry:
 
@@ -136,7 +141,28 @@ Contributions to this ecosystem guide are warmly welcomed! To suggest a new tool
 
 ---
 
-## Disclaimer & Security Notice
+## 🌟 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you for visiting and supporting the **Awesome Security Auditing & Container Sandboxing** project! 🙌
+
+If you find this curated directory helpful for your security research, platform engineering, or container hardening efforts, please consider:
+- ⭐ **Starring this repository** to help others discover it
+- 🍴 **Forking and contributing** your favorite tools and insights
+- 📢 **Sharing it** with your fellow DevSecOps engineers and communities
+- ☕ **Buying a coffee / sponsoring** the maintainer on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)
+
+Your support keeps this project maintained, up to date, and free for the open-source community! ❤️
+
+---
+
+## ⚠️ Disclaimer & Security Notice
 
 - This repository is a **community-curated index** provided for educational, research, and platform architectural purposes. Mention of a tool or platform does not constitute an official endorsement.
 - Container sandboxing mechanisms (`namespaces`, `seccomp`, `gVisor`, `Firecracker`) differ substantially in their attack surfaces and security guarantees. A defense-in-depth model—incorporating least privilege, read-only root filesystems, rootless execution, drop capabilities (`CAP_SYS_ADMIN`), and network segmentation—remains essential.
