@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#080c18" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyber-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#38ef7d" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#11998e" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="pulse-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38ef7d" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Hexagon Pattern -->
+    <pattern id="hex-grid" width="40" height="69.282" patternUnits="userSpaceOnUse" patternTransform="scale(1)">
+      <path d="M 40 0 L 20 11.547 L 0 0 L 0 23.094 L 20 34.641 L 40 23.094 Z M 0 34.641 L 20 46.188 L 0 57.735 L 0 69.282 L 20 80.829 L 40 69.282 L 40 46.188 L 20 34.641 Z" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.35"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" />
+
+  <!-- Animated Tech Hexagon Pattern overlay -->
+  <rect width="1200" height="360" fill="url(#hex-grid)" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="7s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Dynamic Circuit Beams / Wave Lines in Background -->
+  <g opacity="0.3" filter="url(#soft-glow)">
+    <path d="M -100,60 Q 300,120 700,40 T 1300,80" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="8 12">
+      <animate attributeName="stroke-dashoffset" values="200;0" dur="14s" repeatCount="indefinite" />
+    </path>
+    <path d="M -100,300 Q 400,220 800,310 T 1300,260" fill="none" stroke="#38ef7d" stroke-width="2" stroke-dasharray="10 16">
+      <animate attributeName="stroke-dashoffset" values="0;200" dur="18s" repeatCount="indefinite" />
+    </path>
+    <path d="M 0,180 Q 350,90 750,230 T 1200,160" fill="none" stroke="#4facfe" stroke-width="1.5" stroke-dasharray="6 10">
+      <animate attributeName="stroke-dashoffset" values="160;0" dur="10s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Dynamic Glowing MicroVM & Container Isolator Pods (Right Side) -->
+  <g transform="translate(950, 180)">
+    <!-- Outer Orbit Circle -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="6 8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Shield / Core Isolation Node -->
+    <polygon points="0,-65 55,-35 55,35 0,65 -55,35 -55,-35" fill="url(#badge-grad)" stroke="url(#cyber-cyan)" stroke-width="2.5" filter="url(#glow)">
+      <animate attributeName="stroke-width" values="2;3.5;2" dur="3s" repeatCount="indefinite" />
+    </polygon>
+
+    <!-- Inner Shield Symbol -->
+    <path d="M 0,-30 L 22,-15 V 10 C 22,25 0,35 0,35 C 0,35 -22,25 -22,10 V -15 Z" fill="url(#shield-grad)" opacity="0.85">
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M -8,0 L -2,6 L 10,-6" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Orbiting Satellite 1: MicroVM -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
+      <circle cx="110" cy="0" r="14" fill="#0f172a" stroke="#00f2fe" stroke-width="2" filter="url(#soft-glow)" />
+      <text x="110" y="4" font-size="8" fill="#00f2fe" font-weight="bold" text-anchor="middle">KVM</text>
+    </g>
+
+    <!-- Orbiting Satellite 2: eBPF -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="12s" repeatCount="indefinite" />
+      <circle cx="110" cy="0" r="14" fill="#0f172a" stroke="#38ef7d" stroke-width="2" filter="url(#soft-glow)" />
+      <text x="110" y="4" font-size="7.5" fill="#38ef7d" font-weight="bold" text-anchor="middle">eBPF</text>
+    </g>
+
+    <!-- Orbiting Satellite 3: Sandbox -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="12s" repeatCount="indefinite" />
+      <circle cx="110" cy="0" r="14" fill="#0f172a" stroke="#a78bfa" stroke-width="2" filter="url(#soft-glow)" />
+      <text x="110" y="4" font-size="8" fill="#c084fc" font-weight="bold" text-anchor="middle">OCI</text>
+    </g>
+  </g>
+
+  <!-- Left Accent Tech Element -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="4" height="260" rx="2" fill="url(#cyber-cyan)" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <circle cx="2" cy="18" r="5" fill="#00f2fe" filter="url(#soft-glow)" />
+    <circle cx="2" cy="130" r="4" fill="#38ef7d" filter="url(#soft-glow)" />
+    <circle cx="2" cy="242" r="5" fill="#00f2fe" filter="url(#soft-glow)" />
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Tags & Badges -->
+  <g transform="translate(85, 62)">
+    <!-- Pill 1: Status / Category -->
+    <rect x="0" y="0" width="165" height="28" rx="14" fill="#1e293b" stroke="#00f2fe" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="14" cy="14" r="4" fill="#00f2fe">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="26" y="18" fill="#e2e8f0" font-size="11.5" font-weight="600" letter-spacing="0.5">DEVSECOPS &amp; KERNEL</text>
+
+    <!-- Pill 2: MicroVMs -->
+    <rect x="177" y="0" width="175" height="28" rx="14" fill="#1e293b" stroke="#38ef7d" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="191" cy="14" r="4" fill="#38ef7d">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="203" y="18" fill="#e2e8f0" font-size="11.5" font-weight="600" letter-spacing="0.5">CONTAINER ISOLATION</text>
+
+    <!-- Pill 3: eBPF & Runtime -->
+    <rect x="364" y="0" width="145" height="28" rx="14" fill="#1e293b" stroke="#a78bfa" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="378" cy="14" r="4" fill="#c084fc">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="390" y="18" fill="#e2e8f0" font-size="11.5" font-weight="600" letter-spacing="0.5">eBPF RUNTIME</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Main Title & Subtitles (Crystal Clear in Foreground) -->
+  <g transform="translate(85, 140)">
+    <!-- Main Title -->
+    <text x="0" y="0" fill="#ffffff" font-size="37" font-weight="800" letter-spacing="-0.5">
+      Awesome <tspan fill="url(#cyber-cyan)">Security Auditing</tspan> &amp;
+    </text>
+    <text x="0" y="44" fill="#ffffff" font-size="37" font-weight="800" letter-spacing="-0.5">
+      <tspan fill="url(#pulse-grad)">Container Sandboxing</tspan>
+    </text>
+
+    <!-- Subtitle Description -->
+    <text x="0" y="85" fill="#94a3b8" font-size="15.5" font-weight="400">
+      Curated guide to SaaS CNAPP platforms, MicroVM hypervisors, Linux namespaces,
+    </text>
+    <text x="0" y="108" fill="#94a3b8" font-size="15.5" font-weight="400">
+      eBPF runtime security engines, Landlock syscall sandboxes, and CVE scanners.
+    </text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Feature Highlights Bar (Bottom) -->
+  <g transform="translate(85, 290)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="15" fill="#00f2fe" font-size="12" font-weight="700">MICROVMS</text>
+      <text x="75" y="15" fill="#64748b" font-size="12">Firecracker • gVisor • Kata</text>
+    </g>
+
+    <line x1="285" y1="4" x2="285" y2="18" stroke="#334155" stroke-width="1.5" />
+
+    <g transform="translate(305, 0)">
+      <text x="0" y="15" fill="#38ef7d" font-size="12" font-weight="700">RUNTIME</text>
+      <text x="65" y="15" fill="#64748b" font-size="12">Falco • Tetragon • Tracee</text>
+    </g>
+
+    <line x1="565" y1="4" x2="565" y2="18" stroke="#334155" stroke-width="1.5" />
+
+    <g transform="translate(585, 0)">
+      <text x="0" y="15" fill="#c084fc" font-size="12" font-weight="700">AUDITING</text>
+      <text x="70" y="15" fill="#64748b" font-size="12">Trivy • Grype • Lynis • CIS Bench</text>
+    </g>
+  </g>
+
+  <!-- Subtle Top & Bottom Glowing Borders -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#cyber-cyan)" opacity="0.7" />
+  <rect x="0" y="358" width="1200" height="2" fill="url(#pulse-grad)" opacity="0.6" />
+</svg>
