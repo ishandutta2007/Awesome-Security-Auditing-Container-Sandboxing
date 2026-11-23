@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing?style=social" alt="GitHub_Stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Security-Auditing-Container-Sandboxing?style=social" alt="GitHub forks"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
@@ -58,7 +58,7 @@ The following SaaS and hosted platforms provide managed container security audit
 
 Sorted by GitHub community popularity (stargazers count descending). Each open-source project features its live GitHub stargazers badge linking directly to its stargazer community.
 
-| Project & Repository | Stars | Category / Focus | Description |
+| Project & Repository | GitHub_Stars | Category / Focus | Description |
 | :--- | :--- | :--- | :--- |
 | **[Trivy](https://github.com/aquasecurity/trivy)** | [![Stars](https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white)](https://github.com/aquasecurity/trivy/stargazers) | Vulnerability & SBOM Scanner | Comprehensive open-source vulnerability, misconfiguration, secret, and SBOM scanner for container images, filesystems, Git repositories, and Kubernetes clusters. |
 | **[Firecracker](https://github.com/firecracker-microvm/firecracker)** | [![Stars](https://img.shields.io/github/stars/firecracker-microvm/firecracker?style=social&color=white)](https://github.com/firecracker-microvm/firecracker/stargazers) | MicroVM Hypervisor | Minimalist Virtual Machine Monitor (VMM) written in Rust on Linux KVM to create fast, hardware-isolated, multi-tenant microVMs powering AWS Lambda and Fargate. |
@@ -136,7 +136,7 @@ Contributions to this ecosystem guide are warmly welcomed! To suggest a new tool
 2. **Add or modify entries** in `README.md`:
    - For SaaS tools: include verified starting tier pricing, explicit free trial/tier limits, company valuation/scale, and key capabilities.
    - For Open-Source projects: follow the table schema with proper repository links and stargazer badges `[![Stars](https://img.shields.io/github/stars/owner/repo?style=social&color=white)](https://github.com/owner/repo/stargazers)`.
-3. Ensure tools are placed in the correct sorted order (SaaS by company valuation descending, OSS by GitHub stars descending).
+3. Ensure tools are placed in the correct sorted order (SaaS by company valuation descending, OSS by GitHub_Stars descending).
 4. **Submit a Pull Request** with a brief summary explaining why the project is a valuable addition.
 
 ---
